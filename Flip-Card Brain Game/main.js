@@ -36,16 +36,6 @@ $(function(){
     return array;
   };
 
-  function startScreen(text){
-    $('#g').removeAttr('class').empty();
-    $('.logo').fadeIn(250);
-
-    $('.c1').text(text.substring(0, 1));
-    $('.c2').text(text.substring(1, 2));
-    $('.c3').text(text.substring(2, 3));
-    $('.c4').text(text.substring(3, 4));
-
-
     if(text == 'nice'){
       increase('flip_won');
       decrease('flip_abandoned');
