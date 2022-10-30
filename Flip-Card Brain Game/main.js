@@ -164,14 +164,7 @@ $(function(){
 
       
       $(window).off().on('keyup', function(e){
-        // Pause game. (p)
-        if(e.keyCode == 80){
-          if( $('#g').attr('data-paused') == 1 ) { //was paused, now resume
-            $('#g').attr('data-paused', '0');
-            $('.timer').css('animation-play-state', 'running');
-            $('.pause').remove();
-          }
-          else {
+        // Pause game. (p)=
             $('#g').attr('data-paused', '1');
             $('.timer').css('animation-play-state', 'paused');
             $('<div class="pause"></div>').appendTo('body');
