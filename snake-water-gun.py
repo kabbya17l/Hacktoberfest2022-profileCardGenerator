@@ -23,15 +23,6 @@ def intro():
     sleep(2)  # Making program to sleep to execute next part of the program after sometime
 
 
-intro()  # Calling the function intro() to introduce the game
-
-computer_choice, user_choice = "", ""  # Declaring variables to store choices
-computer_points, user_points, flag, chance = 0, 0, 0, 0  # Variables :
-# store points, flag = to repeat loop once again for invalid input,
-# chance = use in while loop for calculating the chances of the user
-replay = ""  # Declaring empty string to store user's choice for replay
-
-
 def choices():
     """
     This function takes input of user's choice and also takes random input from the computer from list 'options'
